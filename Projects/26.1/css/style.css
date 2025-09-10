@@ -1,0 +1,238 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    :root{
+        --text-color:white;
+        --hilight-color:blue;
+        --back-color:rgb(32, 32, 241);
+        --default-color:black;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul li{
+        list-style: none;
+    }
+    header{
+        background-color: var(--default-color);
+    }
+    .container{
+        max-width: 1320px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .d-flex{
+        display: flex;
+    }
+    .justify-center{
+        justify-content: center;
+    }
+    .justify-between{
+        align-content: space-between;
+    }
+    .position-relative{
+        position: relative;
+    }
+    .w-1{
+        width:100%;
+    }
+    .w-2{
+        width: 50%;
+    }
+    .w-3{
+        width: 33.33%;
+    }
+
+    /* Navbar sections start  */
+header {
+    background-color: var(--default-color);
+}
+
+.top-sec {
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.logo , h1 {
+    color: var(--text-color);
+    font-size: 40px;
+    margin-right: 30px;
+    /* display: inline-block; */
+}
+
+.ulcon .con-list,
+.con-list2 {
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ulcon .con-list li a,
+.con-list2 li a,
+.con-list2 li a i {
+    color: var(--text-color);
+}
+
+
+/* body section start here  */
+/* Second Navbar */
+.navbar {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+
+.navbar-2 {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.navbar-2 li a {
+    color: gray;
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search a i {
+    color: darkgray;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    /* banner section start here  */
+    .banner-con {
+        background-image: url(../images/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+    }
+    .banner-info{
+        position: absolute;
+        top: 40%;
+        left: 36%;
+        text-align: center;
+    }
+    .banner-info h1  {
+        width: 396px;
+        line-height: 55px;
+        margin-bottom: 20px;
+        color: var(--text-color);
+        font-size: 45px;
+    }
+    .banner-info p{
+        width: 396px;
+        line-height: 25px;
+        color: var(--text-color);
+        margin-bottom: 20px;
+    }
+    .vd-btn {
+        padding: 12px 25px;
+        margin: 10px 2px;
+        background-color: transparent;
+        border-radius: 50px;
+        font-size: large;
+        font-weight: 500;
+        border: 2px solid var(--hilight-color); 
+        z-index: 4;
+        position: relative;
+        display: inline-block;
+        overflow: hidden; 
+        width: 200px;
+        text-align: center;
+        color: var(--text-color);
+        
+    }
+    .vd-btn::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -110%;
+        transition: all 0.6s ease-in-out;
+        width: 100%;
+        height: 100%;
+        background-color: var(--hilight-color);
+        font-size: large;
+        font-weight: 500;
+        z-index: -1;
+        transition: 0.4s;  
+        color: var(--text-color);
+    }
+    .vd-btn:hover::before{
+        left: 0;
+        overflow: hidden;
+    }
+    .vd-btn:hover{
+        border: 2px solid var(--hilight-color);
+        transition: all 0.6s ease-in-out;
+    }
+
+    /* other grate shoes section start here  */
+    .heading h1{
+        line-height: 55px;
+        margin: 30px 0;
+        color: var(--default-color);
+        font-size: 45px;
+
+    }
+    .heading p{
+        line-height: 25px;
+        margin: 0px 0;
+        color: gray;
+        text-align: center;
+        
+    }
+    .heading{
+        text-align: center;
+    }
+    .shoes-info img{
+        margin-left: 107px;
+    }
+    .info{
+        text-align: center;
+    }
+    .info h4{
+        font-size: larger;
+    }
+    .info p{
+        color: gray;
+        font-size: small;
+    }
+    .info h5{
+        font-size: large;
+        color: var(--hilight-color);
+    }
+
+    /* footer section start here  */
+
+    footer{
+        background-color: var(--default-color);
+        margin-top: 40px;
+        padding: 10px;
+        text-align: center;
+    }
+    .icones-con a i{
+        color: var(--text-color);
+    }
+    .copy-con p,
+    .help-con p{
+        color: var(--text-color);
+    }
