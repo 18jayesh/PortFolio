@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="icone/remixicon.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-collapse {
+          flex: none;
+          
+        }
+        
+      }
+      .carousel-indicators [data-bs-target] {
+        background-color: black;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg position-absolute start-0 top-0 w-100 z-3">
+      <div class="container">
+        <div class="Logo ">
+          <a href="javascript:void(0)" class="text-danger h1">LoGo</a>
+        </div>
+        <span
+          class="navbar-toggler p-2 px-3"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu">
+          <i class="ri-menu-line"></i>
+        </span>
+        <div class="list-con collapse navbar-collapse me-lg-0" id="menu">
+          <ul class="list-unstyled navbar-nav ms-auto  ">
+            <li class="me-4"><a href="javascript:void(0)" class="text-primary-emphasis fw-bold fs-6">Home</a></li>
+            <li class="me-4"><a href="javascript:void(0)" class="text-primary-emphasis fw-bold fs-6">Contact</a></li>
+            <li class="me-4"><a href="javascript:void(0)" class="text-primary-emphasis fw-bold fs-6">About Us</a></li>
+            <li class="me-4"><a href="javascript:void(0)" class="text-primary-emphasis fw-bold fs-6">Services</a></li>
+          </ul>
+        </div>
+        <div class="btn-con collapse navbar-collapse" id="menu">
+          <a href="javascript:void(0)" class="btn btn-danger me-2" data-bs-toggle="offcanvas" data-bs-target="#drmenu">Dr. Info </a>
+          <a href="javascript:void(0)" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalid">Sign-in</a>
+          <!-- <a href="javascript:void(0)" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><i class="ri-menu-line"></i></a> -->
+        </div>
+      </div>
+    </header>
+    <!-- offcanvas start here  -->
+     <div class="container">
+      <div class="offcanvas offcanvas-start " id="drmenu" data-bs-backdrop="static">
+        <div class="offcanvas-header" >
+          <div class="h1">Doctor Information</div>
+          <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="offcanvas" ></a>
+        </div>
+        <div class="offcanvas-body">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea necessitatibus, a aut doloribus consequatur veniam odit numquam qui hic consequuntur labore voluptatum temporibus non aliquam molestias libero ut vitae harum!</p>
+          <a href="javascript:void(0)" class="btn btn-outline-danger" data-bs-dismiss="offcanvas" >Close</a>
+          <a href="javascript:void(0)" class="btn btn-outline-warning" >More</a>
+        </div>
+      </div>
+     </div>
+     <!-- model start here  -->
+      <div class="container">
+        <div class="modal" id="modalid" data-bs-backdrop="static">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2>Sign-in Now</h2>
+              </div>
+              <div class="modal-body">
+                <input type="email" placeholder="Enter Your E-mail" class="rounded-3 p-2 w-100">
+                <input type="password" placeholder="Enter Your Password" class="rounded-3 p-2 mt-3 w-100">
+              </div>
+              <div class="modal-footer">
+                <a href="javascript:void(0)" class="btn btn-outline-success" type="submit">Sign-in</a>
+                <a href="javascript:void(0)" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <main>
+      <section>
+        <div class="carousel slide" id="slider">
+          <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+              <img src="images/b1.jpeg" alt="loby" class="w-100" height="650px">
+              <div class="carousel-caption text-dark  rounded-4">
+                <h3>Thats a Loby of Our Hospital</h3>
+                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, libero!</p>
+                <a href="javascript:void(0)" class="btn btn-info">More Info</a>
+            </div>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="images/b2.jpeg" alt="loby" class="w-100" height="650px">
+            <div class="carousel-caption text-dark  rounded-4">
+              <h3>Our ICU Rooms</h3>
+              <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, libero!</p>
+              <a href="javascript:void(0)" class="btn btn-info">More Info</a>
+            </div>
+          </div>
+          <div class="carousel-item position-relative">
+            <img src="images/b3.jpeg" alt="loby" class="w-100" height="650px">
+            <div class="carousel-caption text-dark rounded-4">
+              <h3>Our Qulified Dr's.</h3>
+              <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, libero!</p>
+              <a href="javascript:void(0)" class="btn btn-info">More Info</a>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <img src="images/b4.jpeg" alt="loby" class="w-100" height="650px">
+            <div class="carousel-caption text-dark  rounded-4">
+              <h3>Our Surgery Room</h3>
+              <p class="lead ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, libero!</p>
+              <a href="javascript:void(0)" class="btn btn-info">More Info</a>
+            </div>
+          </div>
+            <div class="carousel-indicators ">
+              <a href="javascript:void(0)" data-bs-target="#slider" data-bs-slide-to="0" class="active"></a>
+              <a href="javascript:void(0)" data-bs-target="#slider" data-bs-slide-to="1"></a>
+              <a href="javascript:void(0)" data-bs-target="#slider" data-bs-slide-to="2"></a>
+              <a href="javascript:void(0)" data-bs-target="#slider" data-bs-slide-to="3"></a>
+            </div>
+            <div class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+              <a class="carousel-control-prev-icon text-bg-danger rounded"></a>
+            </div>
+            <div class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+              <a class="carousel-control-next-icon text-bg-danger rounded" ></a>
+            </div>
+        </div>
+      </div>
+        </section>
+      <section>
+        <div class="heading text-center mt-4">
+          <h2 >Dr. Information</h2>
+          <p class="lead"> Information about Docotrs or our Hospital</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="card mt-4">
+                <img src="images/hos.jpeg" alt="i1" class="card-img-top w-100" height="213px">
+                <div class="card-body">
+                  <h4 class="card-title">Hospital Facility's</h4>
+                  <p class="card-text">safe surgery, Well Qulified Doctor , big or good Infrastructures , many benifits , surgery Specilist Hospital </p>
+                  <a href="javascript:void(0)" class="btn btn-outline-primary">information</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="card mt-4">
+                <img src="images/dr2.jpeg" alt="i1" class="card-img-top w-100" height="213px">
+                <div class="card-body">
+                  <h4 class="card-title">Our Qulified Doctor's</h4>
+                  <p class="card-text">safe surgery, Well Qulified Doctor , big or good Infrastructures , many benifits , surgery Specilist Hospital </p>
+                  <a href="javascript:void(0)" class="btn btn-outline-primary">information</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="card mt-4">
+                <img src="images/tools.jpg" alt="i1" class="card-img-top w-100" height="213px">
+                <div class="card-body">
+                  <h4 class="card-title">Infrastructure or Appliances</h4>
+                  <p class="card-text">safe surgery, Well Qulified Doctor , big or good Infrastructures , many benifits , surgery Specilist Hospital </p>
+                  <a href="javascript:void(0)" class="btn btn-outline-primary">information</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="heading text-center mt-3">
+            <h1>Gallary</h1>
+          </div>
+            <div class="bar">
+              <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">All-Images</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#dr">Docotos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#app">Appliances</a>
+                </li>
+              </ul>
+            </div>
+            .ro
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="heading text-center">
+            <h1 class="m-5">FAQ to Our Hospital</h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="accordion accordion-flush mt-5" id="id-for-parent">
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <a href="javascript:void(0)" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#dropfaq"> Education or Qulifactions </a>
+                  </div>
+                  <div class="accordion-body collapse " id="dropfaq" data-bs-parent="#id-for-parent">
+                    <p class="lead">MBBS , QULIFIED DOCTORS OR COMPLETED PHD </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <a href="javascript:void(0)" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#dropfaq1"> Information about Operactios  </a>
+                  </div>
+                  <div class="accordion-body collapse " id="dropfaq1" data-bs-parent="#id-for-parent">
+                    <p class="lead">Best Docotrs We Have , and best Rooms or Tools for operations </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <a href="javascript:void(0)" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#dropfaq2"> Our Hospital InfraStructure  </a>
+                  </div>
+                  <div class="accordion-body collapse " id="dropfaq2" data-bs-parent="#id-for-parent">
+                    <p class="lead">Our Hospital InfraStructue is well and good for everyoune because the sunLight direcr  come the window and good for the all patainet  </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <a href="javascript:void(0)" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#dropfaq3"> Embulances services </a>
+                  </div>
+                  <div class="accordion-body collapse " id="dropfaq3" data-bs-parent="#id-for-parent">
+                    <p class="lead"> 24×7 open The Hospital , or 24×7 Available the Embulance any time  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="img-fluid w-100">
+                <img src="images/Hospital.avif" alt="Hospital" width="100%"  class="img-fluid ms-lg-5 rounded-5 mb-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

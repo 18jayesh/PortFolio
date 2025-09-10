@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    
+}
+/* Our Regular menu pack section start here  */
+.card-img-top{
+    height: 200px;
+    object-fit: cover;
+}
+
+.nav-pills {
+    --bs-nav-pills-link-active-bg:  #ffc107;
+}

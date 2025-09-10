@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html::selection{
+    background-color: black;
+    color: white;
+}
+
+/* navbar section list hover  */
+.list-2{
+    transform: translateY(21%);
+    visibility: hidden;
+    transition: all 0.2s ease-in;
+}
+.drop-menu:hover .list-2{
+    visibility: visible;
+    transform: translateY(11%);
+}
+.header-content{
+    /* background-color: rgba(0, 0, 0, 0.507); */
+    z-index: 9;
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+header::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.507);
+    display: inline-block;
+    height: 650px;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.list-3{
+    transform: translateY(21%);
+    visibility: hidden;
+    transition: all 0.1s ease-in;
+    
+}
+.drop-menu1:hover .list-3{
+    visibility: visible;
+    transform: translateY(-31%);
+}
+
+
+/* crousel banner start here  */
+.carousel-caption{
+    width: 50%;
+    top: 37%;
+    left: 25%;
+}
+.carousel-caption h3{
+    font-weight:900;
+}
+
+/* anout section start here  */
+.heading h1{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin: 80px 0 50px 0;
+}
+.abt-con{
+    margin-left: 80px;
+}
+.circle {
+    bottom: -63px;
+    right: -100px;
+    z-index: -1;
+}
+.icone-con{
+    transform: translateX(-37px);
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    
+}
+
+.card:hover .icone-con{
+    visibility: visible;
+    transform: translateX(0);
+}
+
+/* our services sectipn start here  */
+.img-con-top i{
+    font-size: 60px;
+    margin-left: 10px;
+}
+
+/* PortFolio start here  */
+.heading ul li a:hover{
+    color: white !important;
+    background-color: rgb(13, 110, 253)!important;
+}
+
+/* Testimonials SECTION START HERE   */
+.info{
+    width: 61%;
+    margin-left: 25%;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color:  rgb(13, 110, 253)!important;
+    border: 1px solid  rgb(13, 110, 253)!important;
+}
+.ind{
+    margin-top: 20px;
+}
+
+/* priceing section start here  */
+.price{
+    margin-left: 7rem;
+}
+
+/* blog  section start here styling  */
+.blg-img{
+    object-fit: cover;
+    height: 350px;
+}
+.blog .card-body .card-title{
+    transition: all 0.2s ease-in-out;
+}
+.blog .card-body .card-title:hover{
+    color: rgb(13, 110, 253);
+}
+
+/* Frequently Ask Questions section start  */
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-button:hover{
+    background-color: #cfe2ff;
+}
+
+/* footer section start here  */
+.follow-us-con a i:hover{
+    color: white !important;
+}
+
+.subscribe-con input::placeholder{
+    color: #999999;
+}

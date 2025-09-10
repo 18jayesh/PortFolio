@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --text-color:white;
+    --note-color:rgb(241, 104, 127);
+    
+
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-top: 30px;
+}
+header{
+    color: var(--text-color);
+    padding: 0px 30px;
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    z-index: 9;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.postion-relative{
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+}
+.w-1{
+    width: 100%;
+}
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+.py{
+    padding: 10px 20px;
+}
+
+/* navbar styling */
+.conul .conlist{
+    gap: 30px;
+    margin-top: 15px;
+    font-weight: bold;
+
+}
+.conlist li a:hover{
+    color: var(--note-color);
+    font-weight: bold;
+}
+.icone{
+    margin-left: 250px;
+    margin-right: 0px;
+    padding-bottom: 0;  
+}
+.free-btn,
+.lern-btn,
+.contact-btn {
+    padding: 15px 25px;
+    margin-top: 10px;
+    background-color: var(--note-color);
+    border-radius: 4px;
+    font-size: large;
+    font-weight: 500;
+    border: 1px solid var(--note-color);
+    z-index: 1;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: white;
+    text-decoration: none;
+}
+
+.free-btn::before,
+.lern-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--text-color); 
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.free-btn:hover::before,
+.lern-btn:hover::before{
+    left: 0;
+}
+
+.free-btn:hover,
+.lern-btn:hover {
+    color: var(--note-color); 
+}
+
+
+.icone a i{
+    margin-bottom: 30px;
+}
+/* banner section  */
+.banner{
+    background-image: url(../images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+/* .banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.548);
+    overflow: hidden;
+    width: 100%;
+    height: 90vh;
+} */
+.title-info{
+    /* z-index: ; */
+    color: var(--text-color);
+    font-size: 50px;
+    text-align: right;
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 20%;
+}
+.btns{
+    margin-left: 70%;
+}
+.btns a{
+    margin: 3px;
+    margin-top: 20px;
+}
+.lern-btn{
+    background-color: var(--text-color);
+    color: var(--note-color);
+}
+.lern-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--note-color); 
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+.lern-btn:hover {
+    color: var(--text-color); 
+}
+
+/* We Provide Best Services styleing section  */
+.allservices .w-4{
+    min-width: 300px;
+    max-width: 500px;
+}
+.heading{
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 30px;
+    font-weight: none;
+    margin-top: 30px;
+    margin-bottom: 69px;
+    line-height: 50px;
+}
+.img-con{
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px black;
+    padding: 30px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--text-color);
+}
+.img-con i{
+    font-size: 70px;
+    color: var(--note-color);
+    text-align: center;
+    margin-left: 30%;
+
+
+}
+.img-con::before,
+.prices::before{
+    content: '';
+    text-align: center;
+    align-content: center;
+    text-decoration: underline;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 500;
+    z-index: -99;
+    transition: all 0.2 ease-in-out;
+}
+.img-con:hover::before,
+.prices:hover::before{
+    z-index: 99;
+
+}
+
+.img-con h3{
+    text-align: center;
+}
+.img-con .info1-1{
+    margin-top: 60%;
+    padding-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+.img-con .info2{
+    line-height: 25px;
+    /* text-align: ; */
+    text-align: left;
+}
+.img-con .info1{
+    margin-top: 35%;
+}
+
+/* Professional Pricing Styling section  */
+.allPrice .w-3{
+    min-width: 400px;
+    max-width: 500px;
+}
+.mainPrice{
+    box-shadow: 0 0 6px 0px black;
+    text-align: center;
+    line-height: 69px;
+    /* padding: 20px; */
+    border-radius: 20px;
+    color: #6f42c1;
+    margin: 10px;
+}
+.prices{
+    text-align: center;
+    line-height: 69px;
+    padding: 20px;
+    border-radius: 20px;
+    color: #6f42c1;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--text-color);
+}
+.prices p{
+    font-size: large;
+    font-weight: bold;
+}
+.mainPrice a{
+    line-height: 30px;
+    margin-top: 28px;
+}
+.amount label{
+    padding: 10px 19px;
+
+    border: 2px solid var(--note-color);
+    font-size: larger;
+    font-weight: 900;
+    color: var(--text-color);
+    background-color: var(--note-color);
+    border-radius: 10px;
+}
+/* about us section styling  */
+.allabout .w-4{
+    min-width: 200px;
+    max-width: 500px;
+}
+.allabout{
+    padding: 0 50px;
+}
+.aboutus{
+    padding: 20px;
+    text-align: left;
+}
+
+.aboutus p{
+    color: var(--text-color);
+    text-align: left;
+}
+.aboutus .icones{
+    color: var(--text-color);
+    margin-top: 30px;
+
+}
+.aboutus .icones i{
+    margin: 10px;
+    font-size:  x-large;
+}
+.abt-info{
+    color: var(--text-color);
+    padding: 30px;
+    text-align: left;
+    line-height: 40px;
+}
+.abt-info p i{
+    color: var(--note-color);
+}
+h5{
+    color: var(--note-color);
+    text-align: center;
+    margin-top: 30px;
+    font-size: larger;
+    text-decoration: 2px underline;
+}
+.abt-servics .abt-info p i{
+    float: right;
+    font-size: xx-large;
+    color: var(--text-color);
+}
+.abt-img img{
+    margin: 10px;
+    margin-top: 35px;
+    border-radius: 10px;
+}
+.abt-img2 img{
+    margin: 10px;
+    border-radius: 10px;
+}

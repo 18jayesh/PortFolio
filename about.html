@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayesh Mali | About Me</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+    <header class="position-absolute z-1 w-100">
+        <!-- Navbar -->
+        <nav class="custom-navbar p-3">
+            <div class="d-flex align-items-center">
+            <!-- Profile Image trigger modal -->
+            <!-- <img src="image/user.png" alt="Profile" class="profile-img" data-bs-toggle="modal" data-bs-target="#profileModal++"> -->
+            <div class="user-details">
+                <div class="user-name fs-3">Jayesh Mali</div>
+                <div class="user-post fs-5">Frontend Developer</div>
+            </div>
+            </div>
+
+        <!-- Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-info text-dark fw-bold dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ☰ Menu
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="index.html">HomePage</a></li>
+                    <li><a class="dropdown-item" href="about.html">About Me</a></li>
+                    <li><a class="dropdown-item" href="skills.html">Skills</a></li>
+                    <li><a class="dropdown-item" href="resume.html">Resume</a></li>
+                    <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Profile Modal -->
+        <div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-center">
+                <div class="modal-body">
+                <img src="image/user.png" alt="Profile" class="img-fluid rounded-circle" style="max-width: 200px;">
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+  <div class="personal-info-container position-relative">
+    <div class="info-section">
+      <h1>About Me</h1>
+      <img src="image/profile copy.png" alt="Profile" class="profile-section">
+
+      <h2 class="mt-3">Jayesh Mali</h2>
+      <p class="fw-bold">MyPost - Frontend Developer</p>
+
+      <p>
+        <a href="mailto:jayeshmali245@gmail.com">E-mail - jayeshmali245@gmail.com</a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/jayesh-mali-a88625343" target="_blank">LinkedIn Profile</a>
+      </p>
+      <p>
+        <a href="https://github.com/18jayesh?tab=repositories" target="_blank">GitHub Link</a>
+      </p>
+
+      <p>Phone No. - <span class="fw-bold">+91 7863854896</span></p>
+      <p>Address - Panchavati Society, Room No.42, Kim, Surat, Olpad, Gujarat</p>
+      <p>Gender - Male</p>
+      <p>Graduation - BCA (Bachelor of Computer Applications)</p>
+
+      <p class="mt-3">
+        Passionate developer with a love for building amazing UIs and solving real problems.
+      </p>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

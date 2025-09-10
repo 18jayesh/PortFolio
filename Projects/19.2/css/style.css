@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-color:#f5f5f5;
+    --card-color:#6c757d;
+    --red-color:#e00d1b;
+    --white-color: white; 
+    --heading-color:#02395a; 
+    --head-color:#343f52; 
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p ,a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+ul li{
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.postion-relative{
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-center{
+    justify-content: center;
+}
+.w-1{
+    width: 100%;
+}
+.w-2{
+    width: 50%;
+}
+.w-3{
+    width: 33.33%;
+}
+.w-4{
+    width: 25%;
+}
+.w-5{
+    width: 20%;
+}
+.w-6{
+    width: 16.66%;
+}
+.py{
+    padding: 10px 20px;
+}
+/* Navbar stylin start here  */
+.dropdown{
+    border: white;
+    background-color: #e00d1b;
+    padding: 8px;
+
+}
+.dropdown select{
+    background-color: transparent;
+    color: var(--white-color);  
+    padding: 5px;
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.dropdown select option{
+    color: var(--card-color);
+}
+.logo a img{
+    margin: 10px 30px;
+}
+.conlist .conul li {
+    margin: 15px 30px;
+    
+}
+.header-sec{
+    border: 2px solid var(--red-color);
+    background-color: var(--body-color);
+}
+.menu-icon {
+    font-size: xx-large;
+    margin: 5px 0px;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+/* Pick The Right Course To Build Your Career styling section here  */
+.heading h1{
+    color: var(--head-color);
+    padding: 20px;
+    background-color: var(--body-color);
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    margin: 0 10%;
+}
+.cource-con{
+    background-color: var(--body-color);
+    margin: 10px;
+    box-sizing: border-box;
+
+}
+.cource-info{
+    background: linear-gradient( 360deg , var(--card-color),var(--body-color) ,var(--body-color));
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 8px 0 10px 0px var(--card-color);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: 124px;
+}
+.cource-info p{
+    color: var(--heading-color);
+    font-weight: 500;
+}
+.cource-info img{
+    width: 50px;
+}
+
+/* Gujarat's #1 Web Design Course Training Institute sections start here  */
+.list-sec ul li{
+    unicode-bidi: isolate;
+}
+.head-sec{
+    line-height: 30px;
+    padding: 20px 0px 30px 0px;
+}
+.head-sec h1{
+    color: var(--head-color);
+    font-weight: 400;
+}
+.head-sec h3{
+    color: var(--heading-color);
+    font-size: 25px;
+    font-weight: 650;
+    margin: 10px 0;
+}
+mark{
+    background-color: transparent;
+    color: rgb(4, 4, 253);
+}
+.head-sec p{
+    width: 600px;
+    text-align: justify;
+}
+.list-sec ul li i{
+    color: var(--red-color);
+    font-size: larger;
+    margin-right: 5px;
+}
+.apply-btn a,
+.view{
+    padding: 15px 25px;
+    background-color: var(--heading-color);
+    color: var(--body-color);
+    border-radius: 10px;
+}
+.apply-btn:hover{
+    transform: scaley(1.1);
+    transition: all 0.6s ;
+}
+.apply-btn {
+    margin: 30px 0;
+    margin-left: 10px;
+}
+.img-con img{
+    float: left;
+    margin-left: 140px;
+    margin-top: -10px;
+}
+.video-sec{
+    width: 50%;
+}
+video{
+    position: absolute;
+    top: 0%;
+    left: 54%;
+}
+
+/* Trending Courses styling start here  */
+.img-item{
+    border: 1px solid gray;
+    border-bottom: none;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+.img-item img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.view a{
+    color: var(--body-color);
+    line-height: 10px;
+    font-size: 14px;
+}
+.view {
+    text-align: center;
+    width: 100%;
+    line-height: 0;
+    margin-left: 0px;
+}
+.cources-info {
+    text-align: center;
+    background-color: var(--body-color);
+    color: gray;
+    font-size: larger;
+    border: 1px solid gray;
+    padding: 10px 10px 10px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    height: 130px;
+}
+.courses-itean{
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 10px;
+}
+
+/* infrastructure section start here  */
+.infra-info h1{
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 60px;
+    color: var(--head-color);
+}
+.infra-info p{
+    line-height: 25px;
+    width: 410px;
+    margin-top: 20px;
+    color: var(--card-color);
+}
+.img-con-1 img{
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.img-con-2 img{
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+
+/* footer section start here  */
+footer{
+    background-color: #262b32;
+    color: var(--white-color);
+    padding: 30px 0;
+}
+.abt-head h2{
+    text-decoration: underline 2px white;
+    font-weight: 500;
+}
+.location-con p{
+    margin: 10px 0;
+}
+.branch-list{
+    line-height: 30px;
+    margin-left: 10px;
+}
+.branch-list li i{
+    color: var(--red-color);
+    font-size: large;
+    margin-right: 8px;
+}
+.icon-con i{
+    padding: 10px;
+    background-color: var(--white-color);
+    color: var(--head-color);
+    font-size: larger;
+    border-radius: 5px;
+    
+}
+.icon-con{
+    margin-top: 20px;
+}

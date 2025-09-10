@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayesh Mali - Resume</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/resume.css">
+  
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayesh Mali | Portfolio</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    @media(min-width:1400px){
+      .right-photo img{
+        width: 518px;
+      }
+    }
+    @media(max-width:1399px){
+      .right-photo img{
+        width: 400px;
+      }
+    }
+    @media(max-width:1199px){
+      .right-photo img{
+        width: 390px;
+      }
+    }
+    @media(max-width:991px){
+      .right-photo img{
+        width: 380px;
+      }
+    }
+    @media(max-width:767px){
+      .right-photo img{
+        width: 350px;
+
+      }
+    }
+    @media(max-width:575px){
+      .right-photo img{
+        display: none;
+      }
+      .floating-icons{
+        left: 4%;
+        top: 56%;
+      }
+    }
+</style>
+<body>
+
+  <!-- Navbar -->
+    <header class="position-absolute z-1 w-100">
+        <!-- Navbar -->
+        <nav class="custom-navbar p-3">
+            <div class="d-flex align-items-center">
+            <!-- Profile Image trigger modal -->
+            <!-- <img src="image/user.png" alt="Profile" class="profile-img" data-bs-toggle="modal" data-bs-target="#profileModal++"> -->
+            <div class="user-details">
+                <div class="user-name fs-3">Jayesh Mali</div>
+                <div class="user-post fs-5">Frontend Developer</div>
+            </div>
+            </div>
+
+        <!-- Dropdown -->
+            <div class="dropdown z-3">
+                <button class="btn btn-info text-dark fw-bold dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ☰ Menu
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end z-3">
+                    <li><a class="dropdown-item" href="index.html">HomePage</a></li>
+                    <li><a class="dropdown-item" href="about.html">About Me</a></li>
+                    <li><a class="dropdown-item" href="skills.html">Skills</a></li>
+                    <li><a class="dropdown-item" href="resume.html">Resume</a></li>
+                    <li><a class="dropdown-item" href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Profile Modal -->
+        <div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-center">
+                <div class="modal-body">
+                <img src="image/user.png" alt="Profile" class="img-fluid rounded-circle" style="max-width: 200px;">
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+  <!-- Hero Section -->
+  <section class="home-main position-relative">
+    
+    <!-- Center Content -->
+    <div class="center-content">
+      <h1 class="name-animate">Jayesh Mali</h1>
+      <h4 class="role-animate mb-4">FrontEnd Developer</h4>
+      <a href="projects.html" class="project-btn text-decoration-none fs-5">View Project Work</a>
+    </div>
+
+    <!-- Floating Side Icons -->
+    <div class="floating-icons">
+      <img src="image/html.png" alt="HTML" class="floating-icon">
+      <img src="image/css.png" alt="CSS" class="floating-icon">
+      <img src="image/js.png" alt="JS" class="floating-icon">
+      <img src="image/react.png" alt="React" class="floating-icon">
+    </div>
+
+    <!-- Right Side Image -->
+    <div class="right-photo">
+      <img src="image/profile.png" alt="Developer" width="400px">
+    </div>
+
+  </section>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+</body>
+</html>
